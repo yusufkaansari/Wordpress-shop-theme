@@ -1,7 +1,7 @@
 <footer class="pb-50  pt-70 pos-relative">
         <div class="pos-top triangle-bottom"></div>
         <div class="container-fluid">
-                <a href="index.html"><img src="images/logo-white.png" alt="Logo"></a>
+                <a href="index.html"><img src="<?php bloginfo('template_url'); ?>/images/logo-white.png" alt="Logo"></a>
 
                 <div class="pt-30">
                         <p class="underline-secondary"><b>Address:</b></p>
@@ -33,11 +33,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div><!-- container -->
 </footer>
 
-<!-- SCIPTS -->
-<script src="plugin-frameworks/jquery-3.2.1.min.js"></script>
-<script src="plugin-frameworks/bootstrap.min.js"></script>
-<script src="plugin-frameworks/swiper.js"></script>
-<script src="common/scripts.js"></script>
 
+<?php wp_footer(); ?>
 </body>
 </html>

@@ -6,22 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
 
-        <!-- Font -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-        <link rel="stylesheet" href="fonts/beyond_the_mountains-webfont.css" type="text/css"/>
 
-        <!-- Stylesheets -->
-        <link href="plugin-frameworks/bootstrap.min.css" rel="stylesheet">
-        <link href="plugin-frameworks/swiper.css" rel="stylesheet">
-        <link href="fonts/ionicons.css" rel="stylesheet">
-        <link href="common/styles.css" rel="stylesheet">
-
+<?php wp_head(); ?>
 </head>
 <body>
 
 <header>
         <div class="container">
-                <a class="logo" href="#"><img src="images/logo-white.png" alt="Logo"></a>
+                <a class="logo" href="#"><img src="<?php bloginfo('template_url'); ?>/images/logo-white.png" alt="Logo"></a>
 
                 <div class="right-area">
                         <h6><a class="plr-20 color-white btn-fill-primary" href="#">ORDER: +34 685 778 8892</a></h6>
