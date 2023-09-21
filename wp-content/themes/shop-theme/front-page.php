@@ -6,9 +6,7 @@
                         <div class="dplay-tbl-cell center-text color-white">
 
 <?php
-
 $giris_alani = get_field('giris_alani');
-
 ?>
 
                                 <h5><b><?php echo $giris_alani['slogan']; ?></b></h5>
@@ -29,29 +27,19 @@ $giris_alani = get_field('giris_alani');
         <div class="container">
                 <div class="heading">
                         <img class="heading-img" src="<?php bloginfo('template_url'); ?>/images/heading_logo.png" alt="">
-                        <h2>Our Story</h2>
+<?php
+$hikayemiz = get_field('hikayemiz');
+?>
+                        <h2><?php echo $hikayemiz['hikayemiz_baslik']; ?></h2>
                 </div>
 
                 <div class="row">
                         <div class="col-md-6">
-                                <p class="mb-30">Maecenas fermentum tortor id fringilla molestie. In hac habitasse
-                                        platea dictumst. Morbi maximus
-                                        lobortis ipsum, ut blandit augue ullamcorper vitae.
-                                        Nulla dignissim leo felis, eget cursus elit aliquet ut. Curabitur vel convallis
-                                        massa. Morbi tellus
-                                        tortor, luctus et lacinia non, tincidunt in lacus.
-                                        Vivamus sed ligula imperdiet, feugiat magna vitae, blandit ex. Vestibulum id
-                                        dapibus dolor, ac
-                                        cursus nulla. </p>
+                                <p class="mb-30"><?php echo $hikayemiz['sol_taraf']; ?></p>
                         </div><!-- col-md-6 -->
 
                         <div class="col-md-6">
-                                <p class="mb-30">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea
-                                        dictumst.Morbi maximus lobortis ipsum, ut blandit augue ullamcorper vitae.
-                                        Nulla dignissim leo felis, eget cursus elit aliquet ut. Curabitur vel
-                                        convallismassa. Morbi tellus tortor, luctus et lacinia non, tincidunt in lacus.
-                                        Vivamus sed ligula imperdiet, feugiat magna vitae, blandit ex. Vestibulumidda
-                                        pibus dolor, accursus nulla. </p>
+                                <p class="mb-30"><?php echo $hikayemiz['sag_taraf']; ?></p>
                         </div><!-- col-md-6 -->
                 </div><!-- row -->
         </div><!-- container -->
