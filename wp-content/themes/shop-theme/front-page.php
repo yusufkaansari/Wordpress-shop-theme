@@ -5,9 +5,18 @@
                 <div class="dplay-tbl">
                         <div class="dplay-tbl-cell center-text color-white">
 
-                                <h5><b>BEST IN TOWN</b></h5>
-                                <h1 class="mt-30 mb-15">Pizza & Pasta</h1>
-                                <h5><a href="#" class="btn-primaryc plr-25"><b>SEE TODAYS MENU</b></a></h5>
+<?php
+
+$giris_alani = get_field('giris_alani');
+
+?>
+
+                                <h5><b><?php echo $giris_alani['slogan']; ?></b></h5>
+                                <h1 class="mt-30 mb-15"><?php echo $giris_alani['baslik']; ?></h1>
+
+                                <?php if($giris_alani['link']): ?>
+                                <h5><a href="<?php echo $giris_alani['link']; ?>" class="btn-primaryc plr-25"><b><?php echo $giris_alani['link_adi']; ?></b></a></h5>
+                                <?php endif; ?>
                         </div><!-- dplay-tbl-cell -->
                 </div><!-- dplay-tbl -->
         </div><!-- container -->
