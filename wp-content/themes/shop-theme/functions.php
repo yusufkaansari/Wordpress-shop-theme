@@ -32,4 +32,13 @@ wp_enqueue_script('scripts');
 }
 add_action('wp_enqueue_scripts','jsekle');
 
+// Görünüm -> Menüler Alanını aktif etmek
+add_theme_support("menus");
+
+// ust-menu değişkeni menüyü kullanmak için gerekecek
+// Görünüm -> Menüler -> Menu ayarları kısmında bu "tema konumları"nda görünecek
+register_nav_menus( array(
+    'ust-menu' => __('Üst Menü','theme')
+));
+
 ?>
