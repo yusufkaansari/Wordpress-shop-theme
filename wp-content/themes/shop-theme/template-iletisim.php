@@ -8,7 +8,7 @@
         <div class="container h-100">
                 <div class="dplay-tbl">
                         <div class="dplay-tbl-cell center-text color-white pt-90">
-                                <h3 class="mt-30 mb-15">İletişim</h3>
+                                <h3 class="mt-30 mb-15"><?php the_title(); ?></h3>
                         </div><!-- dplay-tbl-cell -->
                 </div><!-- dplay-tbl -->
         </div><!-- container -->

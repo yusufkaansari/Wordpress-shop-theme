@@ -45,4 +45,23 @@ register_nav_menus( array(
 
 add_theme_support('post-thumbnails');
 
+
+
+/**
+ * Filter the "read more" excerpt string link to the post.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+function wpdocs_excerpt_more( $more ) {
+	if ( ! is_single() ) {
+		$more = sprintf( '... <a class="read-more" style="color:red" href="%1$s">%2$s</a>',
+			get_permalink( get_the_ID() ),
+			__( 'Devamını Oku', 'textdomain' )
+		);
+	}
+
+	return $more;
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 ?>
