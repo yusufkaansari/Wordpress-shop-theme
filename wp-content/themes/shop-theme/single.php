@@ -1,19 +1,6 @@
 <?php get_header(); ?>
-<section class="bg-7 h-500x main-slider pos-relative">
-        <div class="triangle-up pos-bottom"></div>
-        <div class="container h-100">
-                <div class="dplay-tbl">
-                        <div class="dplay-tbl-cell center-text color-white pt-90">
-                        
-                                <h5><b><?php the_archive_description(); ?></b></h5>
-                                <h3 class="mt-30 mb-15"><?php the_archive_title(); ?></h3>
-                        </div><!-- dplay-tbl-cell -->
-                </div><!-- dplay-tbl -->
-        </div><!-- container -->
-</section>
 
-
-<section class="story-area left-text center-sm-text">
+<section class="story-area left-text center-sm-text" style="margin-top:50px;">
         <div class="container">
                 <div class="row">
                         <div class="col-md-12 col-lg-12">
@@ -39,7 +26,12 @@
                                 </div><!--mb-30-->
        
 <?php endwhile; else : _e( 'Üzgünüm, kriterlerinize uyan hiçbir gönderi yok.', 'textdomain' ); endif; ?>
+<?php 
 
+if ( comments_open() || get_comments_number() ) :
+	comments_template();
+endif;
+?>
                         </div><!--col-md-12-->
 
                 </div><!-- row -->

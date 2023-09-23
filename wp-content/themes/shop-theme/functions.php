@@ -64,4 +64,6 @@ function wpdocs_excerpt_more( $more ) {
 	return $more;
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+
 ?>
