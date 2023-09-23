@@ -10,8 +10,8 @@ wp_enqueue_style('webfont');
 /* Stylesheets  */
 wp_register_style( 'bootstrap', get_template_directory_uri().'/plugin-frameworks/bootstrap.min.css', array(),1,'all');
 wp_enqueue_style('bootstrap');
-wp_register_style( 'swiper', get_template_directory_uri().'/fplugin-frameworks/swiper.css', array(),1,'all');
-wp_enqueue_style('swiper');
+wp_register_style( 'swiper1', get_template_directory_uri().'/plugin-frameworks/swiper.css', array(),1,'all');
+wp_enqueue_style('swiper1');
 wp_register_style( 'ionicons', get_template_directory_uri().'/fonts/ionicons.css', array(),1,'all');
 wp_enqueue_style('ionicons');
 wp_register_style( 'styles', get_template_directory_uri().'/common/styles.css', array(),1,'all');
@@ -25,8 +25,8 @@ wp_register_script( 'jquery1', get_template_directory_uri().'/plugin-frameworks/
 wp_enqueue_script('jquery1');
 wp_register_script( 'bootstrap', get_template_directory_uri().'/plugin-frameworks/bootstrap.min.js', array(),1,1);
 wp_enqueue_script('bootstrap');
-wp_register_script( 'swiper', get_template_directory_uri().'/plugin-frameworks/swiper.js', array(),1,1);
-wp_enqueue_script('swiper');
+wp_register_script( 'swiper2', get_template_directory_uri().'/plugin-frameworks/swiper.js', array(),1,1);
+wp_enqueue_script('swiper2');
 wp_register_script( 'scripts', get_template_directory_uri().'/common/scripts.js', array(),1,1);
 wp_enqueue_script('scripts');
 }
