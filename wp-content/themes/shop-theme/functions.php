@@ -41,4 +41,8 @@ register_nav_menus( array(
     'ust-menu' => __('Üst Menü','theme')
 ));
 
+// Öne Çıkarılmış Görsel Alanı
+
+add_theme_support('post-thumbnails');
+
 ?>
