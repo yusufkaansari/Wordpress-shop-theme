@@ -1,5 +1,5 @@
 <?php
-
+/* Görünüm -> Bileşenler kısmını açmak için:*/
 register_sidebar(
     array(
         'name' => 'Udemy',
