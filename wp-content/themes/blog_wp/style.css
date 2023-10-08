@@ -1,0 +1,132 @@
+body {
+  font: 13px/21px Arial;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+}
+
+.site {
+  width: 960px;
+  margin: auto;
+}
+/* ust */
+.ust {
+  padding: 20px 0;
+  border-bottom: 2px solid #ececec;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.ust .logo {
+  float: left;
+}
+.ust .menu {
+  float: right;
+}
+
+.ust .menu ul {
+
+}
+
+.ust .menu ul li {
+  float: left;
+  margin-left: 20px;
+}
+.ust .menu ul li a{
+  padding: 5px;
+}
+
+.ust .menu ul li a:hover{
+  background: #3eada2;
+  color: #fff;
+}
+
+/* govde */
+.govde {
+  overflow: hidden;
+}
+
+
+.govde .sol {
+  float: left;
+  width: 640px;
+}
+
+.govde .sag {
+  float: right;
+  width: 260px;
+  background: #efefef;
+  padding: 20px;
+}
+/* alt */
+.alt {
+  padding: 20px 0;
+  border-top: 2px solid #ececec;
+  margin-top: 20px;
+}
+
+/* yazilar */
+.yazilar {
+
+}
+
+.yazilar .yazi {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #ececec;
+}
+
+.yazilar .yazi h2.baslik {
+  margin-bottom: 10px;
+}
+
+.yazilar .yazi .detay {
+  margin-bottom: 10px;
+}
+
+.yazilar .yazi .detay span {
+  padding-right: 10px;
+}
+.yazilar .yazi .detay span.kategori {
+  padding-right: 0;
+  float: right;
+}
+
+/* sayfalama */
+
+.sayfalama {
+  overflow: hidden;
+}
+.sayfalama .sol-link {
+  float: left;
+  background: #efefef;
+  padding: 3px 5px;
+}
+
+.sayfalama .sag-link {
+  float: right;
+  background: #efefef;
+  padding: 3px 5px;
+}
+
+/* sag */
+.sag .bilesen {
+  margin-bottom: 20px;
+}
+
+.sag .bilesen h2.baslik {
+  color: #3eada2;
+  margin-bottom: 10px;
+}
+
+
+.sag ul {
+
+}
+
+.sag ul li {
+  list-style: square;
+  margin-left: 20px;
+}
