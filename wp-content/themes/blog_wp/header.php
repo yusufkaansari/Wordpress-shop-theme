@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>anasayfa</title>
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_url"); ?>/reset.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_url"); ?>/style.css">
 </head>
 <body>
 
