@@ -17,6 +17,8 @@
 					<div class="yazi-icerik">
 					<?php the_content(); ?> 
 				</div>
+				</br>
+				<?php the_tags(); ?>
 				</div>
 				<?php
 				endwhile
