@@ -1,54 +1,28 @@
-<?php get_header(); ?>
+<?php get_header(); ?> <!-- ayni dizindeki header.php dosyasi eklenir -->
 <div class="sol">
     <div class="yazilar">
+        <?php
+        while(have_posts()) : the_post();
+        ?>
         <div class="yazi">
-            <h2 class="baslik"><a href="">Yazı başlığı</a></h2>
+            <h2 class="baslik"><a href=""><?php the_title(); ?></a></h2>
             <div class="yazi-icerik">
-            Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. 
+            <?php the_content(); ?> 
             </div>
         </div>
-
-        <div class="yazi">
-            <h2 class="baslik"><a href="">Yazı başlığı</a></h2>
-            <div class="yazi-icerik">
-            Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. 
-            </div>
-        </div>
-
-        <div class="yazi">
-            <h2 class="baslik"><a href="">Yazı başlığı</a></h2>
-            <div class="yazi-icerik">
-            Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. 
-            </div>
-        </div>
-
-        <div class="yazi">
-            <h2 class="baslik"><a href="">Yazı başlığı</a></h2>
-            <div class="yazi-icerik">
-            Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. 
-            </div>
-        </div>
-        <div class="yazi">
-            <h2 class="baslik"><a href="">Yazı başlığı</a></h2>
-            <div class="yazi-icerik">
-            Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. 
-            </div>
-        </div>
-        <div class="yazi">
-            <h2 class="baslik"><a href="">Yazı başlığı</a></h2>
-            <div class="yazi-icerik">
-            Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. Yazı içeriğimiz. 
-            </div>
-        </div>				
+        <?php
+        endwhile;
+        ?>
+        			
     </div>
 
     <div class="sayfalama">
         <div class="sol-link">
-        Önceki Yazılar
+        <?php previous_posts_link(); ?>
         </div>
 
         <div class="sag-link">
-        Sonraki Yazılar
+        <?php next_posts_link(); ?>
         </div>
 
     </div>
@@ -56,25 +30,6 @@
 
 </div>
 
-<div class="sag">
-    <div class="bilesen">
-        <h2 class="baslik">Bileşen Başlığı</h2>
-        Bileşen içeriği
-    </div>
-    <div class="bilesen">
-        <h2 class="baslik">Bileşen Başlığı</h2>
-        Bileşen içeriği
-    </div>
-    <div class="bilesen">
-        <h2 class="baslik">Bileşen Başlığı</h2>
-        <ul>
-            <li>Örnek liste</li>
-            <li>Örnek liste</li>
-            <li>Örnek liste</li>
-            <li>Örnek liste</li>
-            <li>Örnek liste</li>
-        </ul>
-    </div>
+<?php get_sidebar();?>  <!-- ayni dizindeki header.php dosyasi eklenir -->
 
-</div>
-<?php get_footer(); ?>
+<?php get_footer(); ?>  <!-- ayni dizindeki footer.php dosyasi eklenir -->

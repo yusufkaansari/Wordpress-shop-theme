@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>anasayfa</title>
+	<title>
+		<?php if(is_home()){ echo "Anasayfa"; } wp_title(''); ?>
+	</title>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_url"); ?>/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_url"); ?>/style.css">
+<?php wp_head(); ?> <!-- wordpress head fonksiyonlarini ekler -->
 </head>
 <body>
 
 <div class="site">
 	<div class="ust">
 		<div class="logo">
-			<h2><a href="">Udemy Tema</a></h2>
+			<h2><a href="<?php bloginfo("url"); ?>"><?php bloginfo("name"); ?></a></h2>
 		</div>
 
 		<div class="menu">
 			<ul>
-				<li><a href="">Anasayfa</a></li>
-				<li><a href="">İletişim</a></li>
-				<li><a href="">Örnek Sayfa</a></li>
+				<li><a href="<?php bloginfo("url"); ?>">Anasayfa</a></li>
+				<?php wp_list_pages("title_li=&"); ?>
 			</ul>
 		</div>
 	</div>
