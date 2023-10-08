@@ -195,3 +195,39 @@ ol.commentlist li:last-child {
 #respond p label {
   color: #555;
 }
+
+/* responsive */
+
+@media (max-width: 960px) {
+  .site {
+    max-width: 100%;
+  }
+
+  .govde .sol {
+    width: calc(100% - 320px);
+  }
+
+  .govde .sag {}
+}
+
+@media (max-width: 600px) {
+  .govde .sol {
+    width: calc(100% - 240px);
+  }
+
+  .govde .sag {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .govde .sol {
+    float: none;
+    width: 100%;
+  }
+
+  .govde .sag {
+    width: 100%;
+    float: none;
+  }
+}
