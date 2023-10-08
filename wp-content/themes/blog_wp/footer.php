@@ -1,6 +1,6 @@
 </div> <!--govde-->
 
-<div class="alt">
+<div class="altkisim">
 Alt kısım. (c) 2015
 </div>
 </div>

@@ -6,7 +6,12 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_url"); ?>/reset.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_url"); ?>/style.css">
-<?php wp_head(); ?> <!-- wordpress head fonksiyonlarini ekler -->
+<?php 
+if (is_singular( )) {
+	wp_enqueue_script("comment-reply");
+}
+wp_head(); 
+?> <!-- wordpress head fonksiyonlarini ekler -->
 </head>
 <body>
 

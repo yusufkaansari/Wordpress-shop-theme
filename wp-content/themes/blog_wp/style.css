@@ -11,6 +11,7 @@ a {
   width: 960px;
   margin: auto;
 }
+
 /* ust */
 .ust {
   padding: 20px 0;
@@ -22,23 +23,23 @@ a {
 .ust .logo {
   float: left;
 }
+
 .ust .menu {
   float: right;
 }
 
-.ust .menu ul {
-
-}
+.ust .menu ul {}
 
 .ust .menu ul li {
   float: left;
   margin-left: 20px;
 }
-.ust .menu ul li a{
+
+.ust .menu ul li a {
   padding: 5px;
 }
 
-.ust .menu ul li a:hover{
+.ust .menu ul li a:hover {
   background: #3eada2;
   color: #fff;
 }
@@ -60,17 +61,16 @@ a {
   background: #efefef;
   padding: 20px;
 }
+
 /* alt */
-.alt {
+.altkisim {
   padding: 20px 0;
   border-top: 2px solid #ececec;
   margin-top: 20px;
 }
 
 /* yazilar */
-.yazilar {
-
-}
+.yazilar {}
 
 .yazilar .yazi {
   margin-bottom: 20px;
@@ -89,6 +89,7 @@ a {
 .yazilar .yazi .detay span {
   padding-right: 10px;
 }
+
 .yazilar .yazi .detay span.kategori {
   padding-right: 0;
   float: right;
@@ -99,6 +100,7 @@ a {
 .sayfalama {
   overflow: hidden;
 }
+
 .sayfalama .sol-link {
   float: left;
   background: #efefef;
@@ -122,11 +124,74 @@ a {
 }
 
 
-.sag ul {
-
-}
+.sag ul {}
 
 .sag ul li {
   list-style: square;
   margin-left: 20px;
+}
+
+/* yorumlar */
+
+.yorumlar {}
+
+h3#comments {
+  font-weight: bold;
+  color: #3eada2;
+  margin-bottom: 10px;
+}
+
+ol.commentlist {}
+
+ol.commentlist li {
+  background: #efefef;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+
+ol.commentlist li .vcard {}
+
+ol.commentlist li .vcard img {
+  display: none;
+}
+
+ol.commentlist li .vcard .fn {
+  font-weight: bold;
+}
+
+ol.commentlist li .commentmeta {
+  font-size: 11px;
+}
+
+ol.commentlist li .commentmeta a {
+  color: #777;
+}
+
+
+ol.commentlist li li {
+  margin-left: 30px;
+}
+
+ol.commentlist li:last-child {
+  margin-bottom: 0;
+}
+
+
+#respond {
+  margin-top: 10px;
+  background: #c0e0dd;
+  padding: 10px;
+}
+
+#respond h3 {
+  font-weight: bold;
+}
+
+#respond p {
+  margin-top: 10px;
+}
+
+#respond p label {
+  color: #555;
 }
