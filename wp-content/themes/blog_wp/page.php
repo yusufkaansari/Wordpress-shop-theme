@@ -9,9 +9,7 @@
 					<div class="detay">
 						<span><?php the_date(); ?></span>
 						<span><?php the_author_posts_link(); ?></span>
-						<span class="kategori">
-							<?php the_category(", "); ?>
-						</span>
+
 					</div>
 
 					<div class="yazi-icerik">
@@ -21,10 +19,6 @@
 				<?php
 				endwhile
 				?>
-			</div>
-
-			<div class="yorumlar">
-			<?php comments_template(); ?>
 			</div>
 
 		</div>

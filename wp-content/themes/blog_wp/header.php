@@ -13,7 +13,7 @@
 <div class="site">
 	<div class="ust">
 		<div class="logo">
-			<h2><a href="<?php bloginfo("url"); ?>"><?php bloginfo("name"); ?></a></h2>
+			<h1><a href="<?php bloginfo("url"); ?>"><?php bloginfo("name"); ?></a></h1>
 		</div>
 
 		<div class="menu">

@@ -5,7 +5,7 @@
         while(have_posts()) : the_post();
         ?>
         <div class="yazi">
-            <h2 class="baslik"><a href=""><?php the_title(); ?></a></h2>
+            <h2 class="baslik"><a href="<?php echo(get_permalink()); ?>"><?php the_title(); ?></a></h2>
             <div class="yazi-icerik">
             <?php the_content(); ?> 
             </div>
