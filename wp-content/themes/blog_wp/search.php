@@ -1,7 +1,7 @@
 <?php get_header(); ?> <!-- ayni dizindeki header.php dosyasi eklenir -->
 <div class="sol">
     <div class="yazilar">
-        <h1>"<?php the_search_query(); ?>" için rama sonuçları</h1></br>
+        <h1>"<?php the_search_query(); ?>" için arama sonuçları</h1></br>
         <?php
         while(have_posts()) : the_post();
         ?>
